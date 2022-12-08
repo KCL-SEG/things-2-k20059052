@@ -9,7 +9,7 @@ class ThingForm(forms.ModelForm):
     class Meta:
         model = Thing
         fields =["name","description","quantity"]
-        widgets ={"name": forms.Textarea(), "quantity": forms.NumberInput(), "description":forms.Textarea()}
+        widgets ={"name": forms.CharField(), "quantity": forms.NumberInput(), "description":forms.Textarea()}
 
     #name= forms.CharField(widget=forms.Textarea, max_length =35)
     #description= forms.CharField(widget=forms.Textarea, max_length=120)
